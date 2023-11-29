@@ -1,3 +1,3 @@
 # BYTE
-## Book Your Table and Enjoy :)
+Book Your Table and Enjoy :)
  
