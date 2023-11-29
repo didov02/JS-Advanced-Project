@@ -1,2 +1,3 @@
-# JS-Advanced-Project
+# BYTE
+## Book Your Table and Enjoy :)
  
