@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@300&display=swap');
+
+.container {
+    width: 500px;
+    height: 45vh;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h2-login {
+    text-align: center;
+    color: #333;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 450px;
+}
+
+button {
+    padding: 10px;
+    background-color: #f57c00;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Kalnia', serif;
+}
+
+button:hover {
+    background-color: #d84315; /* Darker hover color */
+}
+
+button:active {
+    background-color: #8d6e63; /* Even darker color on click */
+}
+
+body {
+    background: linear-gradient(to right, #ffe57f, #ffb74d);
+    font-family: 'Kalnia', serif;
+}
+
+/* Optional: Add styles for responsiveness */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 80%;
+    }
+}
