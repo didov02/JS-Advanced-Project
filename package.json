@@ -1,0 +1,16 @@
+{
+  "name": "js-advanced-project",
+  "version": "1.0.0",
+  "description": "- Effortless Reservation\r     - BYTE simplifies the restaurant reservation process, allowing users to easily book tables at their preferred dining establishments.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./view/script.js",
+    "lite" : "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aleksandar Stoqnov & Dian Vasilev",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
