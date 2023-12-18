@@ -7,8 +7,8 @@ router.get("/", (req, res) => {
 });
 
 router.post("/", (req, res) => {
-  const { firstName } = req.body;
-  const newUser = { firstName, id: ++counter };
+  const { nickname, password } = req.body;
+  const newUser = { nickname, password , id: ++counter };
   users.push(newUser);
   res.send(newUser);
 });
