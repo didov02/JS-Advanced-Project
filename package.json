@@ -5,12 +5,16 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./view/script.js",
-    "lite" : "lite-server",
+    "lite": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Aleksandar Stoqnov & Dian Vasilev",
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.18.2"
   }
 }
