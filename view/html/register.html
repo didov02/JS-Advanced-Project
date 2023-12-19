@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in page</title>
-    <link rel="stylesheet" href="../css/login.css">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/register.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@300&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <div class="container">
-        <h1 class="h1-login">Login</h1>
-        <form id="login-form" class="login-form">
+        <h1 class="h1-register">Register</h1>
+        <form id="register-form" class="register-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
 
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
 
-            <button id="loginButton" type="submit">Login</button>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
 
-            <a class="register-link" href="register.html" target="_blank">You don't have an account? Register here.</a>
+            <button id="registerButton" type="submit">Register</button>
         </form>
     </div>
     <script src="../script.js"></script>
