@@ -2,7 +2,6 @@ const router = require("express").Router();
 const bcrypt = require("bcrypt");
 const db = require("./db");
 const users = [];
-let counter = 0;
 
 router.get("/", async (req, res) => {
     try {
@@ -12,7 +11,6 @@ router.get("/", async (req, res) => {
         console.error("Error fetching users:", error);
         res.status(500).send({status: 'error', message: 'Internal server error'});
     }
-    // res.send(users);
 });
 
 router.post("/", async (req, res) => {
@@ -45,7 +43,7 @@ router.post("/", async (req, res) => {
             email
         };
 
-        res.status(201).send({ status: 'success', data: newUser });
+        res.status(201).send({ status: 'success', data: insertedUser });
     } catch (error) {
         console.error("Error hashing password:", error);
         res.status(500).send({ status: 'error', message: 'Internal server error' });
