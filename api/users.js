@@ -1,10 +1,16 @@
 const router = require("express").Router();
 const bcrypt = require("bcrypt");
+const db = require("./db");
 const users = [];
-let counter = 0;
 
-router.get("/", (req, res) => {
-    res.send(users);
+router.get("/", async (req, res) => {
+    try {
+        const [users, fields] = await db.execute("SELECT * FROM users");
+        res.send(users);
+    } catch (error) {
+        console.error("Error fetching users:", error);
+        res.status(500).send({status: 'error', message: 'Internal server error'});
+    }
 });
 
 router.post("/", async (req, res) => {
@@ -26,11 +32,18 @@ router.post("/", async (req, res) => {
     try {
         const hashedPassword = await bcrypt.hash(password, 10);
 
-        const newUser = { nickname, password: hashedPassword, email, id: ++counter };
+        const [result] = await db.execute(
+            'INSERT INTO users (nickname, password, email) VALUES (?, ?, ?)',
+            [nickname, hashedPassword, email]
+        );
 
-        users.push(newUser);
+        const insertedUser = {
+            id: result.insertId,
+            nickname,
+            email
+        };
 
-        res.status(201).send({ status: 'success', data: newUser });
+        res.status(201).send({ status: 'success', data: insertedUser });
     } catch (error) {
         console.error("Error hashing password:", error);
         res.status(500).send({ status: 'error', message: 'Internal server error' });
