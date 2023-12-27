@@ -4,18 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@300&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <div class="container">
-    </div>
-    <div>
+    <div class="column-left">
+        <div class="large-text">BYTE</div>
 
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="people">Number of People:</label>
+        <input type="text" id="people" name="people" required>
+
+        <label for="minRaiting">Min. Raiting: (1 - 10)</label>
+        <input type="text" id="minRaiting" name="minRaiting" required>
+
+        <label for="maxRaiting">Max. Raiting: (1 - 10)</label>
+        <input type="text" id="maxRaiting" name="maxRaiting" required>
+
+        <button id="submitButton" type="submit" class="submitButton">Submit</button>
     </div>
-    <div>
-        
+
+    <div class="column-center">
+        <div class="searchContainer">
+            <input type="search" class="searchBar" placeholder="Search...">
+            <button class="searchButton" id="searchButton" type="submit">Search</button>
+        </div>
+    </div>
+
+    <div class="column-right">
+        <h2 class="username">Username</h2>
+        <div class="buttonContainer">
+            <div class="separator"></div>
+            <button class="additionalButton">Personal Information</button>
+            <div class="separator"></div>
+            <button class="additionalButton">Settings</button>
+            <div class="separator"></div>
+            <button class="additionalButton">Reservations Made</button>
+            <div class="separator"></div>
+            <button class="additionalButton">Contact us</button>
+            <div class="separator"></div>
+        </div>
     </div>
     <script src="../script.js"></script>
 </body>

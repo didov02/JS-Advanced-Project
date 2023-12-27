@@ -1,0 +1,149 @@
+body {
+    background: linear-gradient(to right, #ffe57f, #feb444);
+    font-family: 'Kalnia', serif;
+}
+
+.column-left{
+    float: left;
+    background: #fff;
+    width: 25%;
+    height: 640px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.column-center {
+    float: left;
+    background: #fff;
+    width: 40%;
+    height: 640px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.column-right {
+    float: right;
+    background: #fff;
+    width: 25%;
+    height: 640px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+.large-text {
+    font-size: 4em;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+.submitButton {
+    padding: 10px;
+    background-color: #f57c00;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Kalnia', serif;
+    width: 30%;
+    margin-left: 20px;
+}
+
+.searchContainer {
+    display: flex;
+}
+
+.searchBar {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.searchButton {
+    padding: 10px;
+    background-color: #f57c00;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Kalnia', serif;
+    width: 20%;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+button:hover {
+    background-color: #d84315;
+}
+
+button:active {
+    background-color: #8d6e63;
+}
+
+label {
+    margin-bottom: 8px;
+    margin-left: 20px;
+    color: #555;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 80%;
+    margin-left: 20px;
+}
+
+.username {
+    margin-left: 30px;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.additionalButton {
+    padding: 10px;
+    background-color: #fff;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Kalnia', serif;
+    width: 80%;
+}
+
+.additionalButton:hover {
+    background-color: #ccc;
+}
+
+.additionalButton:active {
+    background-color: #555;
+}
+
+.separator {
+    width: 80%;
+    border-bottom: 1px solid #ccc;
+    margin: 5px 0;
+}
