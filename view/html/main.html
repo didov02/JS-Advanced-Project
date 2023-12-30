@@ -27,13 +27,16 @@
         <label for="maxRaiting">Max. Raiting: (1 - 10)</label>
         <input type="text" id="maxRaiting" name="maxRaiting" required>
 
-        <button id="submitButton" type="submit" class="submitButton">Submit</button>
+        <button id="submitButton" type="submit" class="submitButton" onclick="changeText('Submitted restaurants.')">Submit</button>
     </div>
 
     <div class="column-center">
         <div class="searchContainer">
             <input type="search" class="searchBar" placeholder="Search...">
-            <button class="searchButton" id="searchButton" type="submit">Search</button>
+            <button class="searchButton" id="searchButton" type="submit" onclick="changeText('Searched restaurants.')">Search</button>
+        </div>
+        <div>
+            <h2 class="restaurantsBox" id="restaurantsBox">Search for restaurants...</h2>
         </div>
     </div>
 
@@ -51,6 +54,6 @@
             <div class="separator"></div>
         </div>
     </div>
-    <script src="../script.js"></script>
+    <script src="../mainLogic.js"></script>
 </body>
 </html>

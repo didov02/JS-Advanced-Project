@@ -147,3 +147,8 @@ input {
     border-bottom: 1px solid #ccc;
     margin: 5px 0;
 }
+
+.restaurantsBox {
+    color: grey;
+    text-align: center;
+}
