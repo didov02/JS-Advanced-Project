@@ -1,0 +1,113 @@
+body {
+    background: linear-gradient(to right, #ffe57f, #feb444);
+    font-family: 'Kalnia', serif;
+}
+
+nav {
+    width: 750px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    text-align: center;
+}
+
+nav .navButton {
+    padding: 15px;
+    background-color: #fff;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Kalnia', serif;
+    margin-left: 60px;
+    font-size: 18px;
+}
+
+nav .navButton:hover {
+    background-color: #db4e23cb;
+}
+
+nav .navButton:active {
+    background-color: #8d6e63;
+}
+
+section {
+    padding: 20px;
+    display: none;
+}
+
+.starting {
+    display: block;
+}
+
+.change-username-section {
+    display: none;
+}
+
+.change-password-section {
+    display: none;
+}
+
+.change-email-section {
+    display: none;
+}
+
+.ending {
+    display: none;
+}
+
+.container {
+    width: 500px;
+    height: 45vh;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1-settings {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 18px
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 450px;
+}
+
+.confirmButton {
+    width: 150px;
+    height: 6vh;
+    background-color: #f57c00;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Kalnia', serif;
+    font-size: 18px
+}
+
+.confirmButton:hover {
+    background-color: #d84315; /* Darker hover color */
+}
+
+.confirmButton:active {
+    background-color: #8d6e63; /* Even darker color on click */
+}

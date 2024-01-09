@@ -132,6 +132,8 @@ input {
     cursor: pointer;
     font-family: 'Kalnia', serif;
     width: 80%;
+    cursor: pointer;
+    transition: 0.4s;
 }
 
 .additionalButton:hover {

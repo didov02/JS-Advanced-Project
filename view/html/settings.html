@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="../css/settings.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@300&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <h1 class="h1-settings">Settings</h1>
+    <nav>
+        <button class="navButton" id="usernameButton" onclick="showSection('change-username-section')">Change Username</a>
+        <button class="navButton" id="passwordButton" onclick="showSection('change-password-section')">Change Password</a>
+        <button class="navButton" id="emailButton" onclick="showSection('change-email-section')">Change Email</a>
+    </nav>
+   <div class="container">
+        <section class="starting">
+            <p>Choose which opption do you want.</p>
+        </section>
+        <section class="change-username-section">
+            <label for="username">New username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="username">Confirm username:</label>
+            <input type="text" id="confirm-username" name="confirm-username" required>
+
+            <button class="confirmButton" id="confirmButton" type="submit">Confirm</button>
+        </section>
+        <section class="change-password-section">
+            <label for="username">New password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="username">Confirm password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <button class="confirmButton" id="confirmButton" type="submit">Confirm</button>
+        </section>
+        <section class="change-email-section">
+            <label for="email">New email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="email">Confirm email:</label>
+            <input type="email" id="confirm-email" name="confirm-email" required>
+
+            <button class="confirmButton" id="confirmButton" type="submit">Confirm</button>
+        </section>
+        <section class="ending">
+            <p>Change has been successfully made.</p>
+        </section>
+   </div>
+    <script src="../settingsLogic.js"></script>
+</body>
+</html>
